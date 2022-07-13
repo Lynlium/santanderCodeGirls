@@ -1,3 +1,5 @@
+package ParEImpar;
+
 import java.util.Scanner;
 
 public class ParEImpar {
