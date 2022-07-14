@@ -1,15 +1,12 @@
 package Lista;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class Lista {
     public static void main(String[] args) {
 
-        System.out.println("Crie uma ista e adicione sete notas:");
-        List<Object> notas = new ArrayList<>();
+        System.out.println("Crie uma lista e adicione sete notas:");
+        List<Double> notas = new ArrayList<>();
 
         notas.add(7.0);
         notas.add(8.5);
@@ -39,9 +36,48 @@ public class Lista {
         System.out.println("Exiba a terceira nota adicionada: " + notas.get(2));
         System.out.println(notas.toString());
 
-        //System.out.println("Exiba a menor nota: " + Collections.min(notas));
+        System.out.println("Exiba a menor nota: " + Collections.min(notas));
 
+        System.out.println("Exiba a maior nota: " + Collections.max(notas));
 
+        Iterator <Double> iterator = notas.iterator();
+        double  soma = 0;
+        while (iterator.hasNext()){
+            Double next = iterator.next();
+            soma += next;
+                    }
+        System.out.println("Exiba a soma dos valores: " + soma);
 
+        System.out.println("Exiba a média das notas: " + (soma/notas.size()));
+
+        System.out.println("Remova a nota 4: ");
+        notas.remove(4d);
+        System.out.println(notas);
+
+        System.out.println("Remova a nota da posição 0: ");
+        notas.remove(0);
+        System.out.println(notas);
+
+        System.out.println("Remova as notas menores que 7 e exiba a lista:");
+        Iterator <Double> iterator1 =  notas.iterator();
+        while(iterator1.hasNext()){
+            double next = iterator1.next();
+            if (next < 7) iterator1.remove();
+        }
+        System.out.println(notas);
+
+        System.out.println("Apague toda a lista:");
+        notas.clear();
+        System.out.println(notas);
+
+        System.out.println("Confira se a lista está vazia: " + notas.isEmpty());
+
+        /*
+        Resolva utilizando a implementação Linkedlist:
+        - Crie uma lista chamada nostas 2 e coloque todos os elementos da list
+        Arraylist nesta nova lista;
+        - Mostre a primeira nota da nova lista, sem removê-lo;
+        - Mostre a priemira nota da lista removendo-a;
+         */
     }
 }
