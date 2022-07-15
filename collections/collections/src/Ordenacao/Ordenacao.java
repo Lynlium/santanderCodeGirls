@@ -95,8 +95,7 @@ class Gato implements Comparable <Gato> {
 
         @Override
         public int compare(Gato g1, Gato g2) {
-            return Integer.compare(g1.getIdade(), g2.getIdade());//são métodos da string, para
-            // sobrescrever números outros métodos devem ser utilizados;;
+            return Integer.compare(g1.getIdade(), g2.getIdade());
         }
     }
 class ComparatorCor implements Comparator <Gato>{
