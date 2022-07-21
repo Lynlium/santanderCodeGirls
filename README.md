@@ -1,2 +1,1 @@
-# Java-exercicios
-Repositório contendo vários exercicísos de estudo em Java
+Projeto final do Bootcamp Santander Code Girls 2022
