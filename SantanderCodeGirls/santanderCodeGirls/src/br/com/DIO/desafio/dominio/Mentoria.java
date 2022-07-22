@@ -9,7 +9,7 @@ public class Mentoria extends Conteudo {
 
     @Override
     public double calcular_Xp() {
-        return XP_PADRAO + 20d;
+        return (XP_PADRAO + 20d);
     }
 
 
@@ -34,7 +34,7 @@ public class Mentoria extends Conteudo {
         return "Mentoria{" +
                 "titulo='" + getTitulo() + '\'' +
                 ", descricao='" + getDescricao() + '\'' +
-                ", cargaHoraria=" + cargaHoraria +
+                ", cargaHoraria=" + getCargaHoraria() +
                 ", data=" + data +
                 '}';
     }

@@ -6,7 +6,7 @@ public class Curso extends  Conteudo {
 
     @Override
     public double calcular_Xp() {
-        return XP_PADRAO * cargaHoraria;
+        return (XP_PADRAO * cargaHoraria);
     }
 
 
@@ -23,7 +23,7 @@ public class Curso extends  Conteudo {
         return "Curso{" +
                 "titulo='" + getTitulo() + '\'' +
                 ", descricao='" + getDescricao() + '\'' +
-                ", cargaHoraria=" + cargaHoraria +
+                ", cargaHoraria=" + getCargaHoraria() +
                 '}';
     }
 
